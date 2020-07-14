@@ -1,0 +1,362 @@
+.body{
+    background-image: url(./img/greenBack.jpg);
+    min-height: 100vh;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+/*On screen that are 600px or less , make the menu links stack on top of each other instead of next to each other*/
+@media screen and (max-width:600px){
+     .navbar , .navbar-brand , .nav{
+         text-align: center;
+         margin: auto;
+     }
+}
+
+.sidenav{
+    background-image: url(./img/pinkBack.jpg);
+    height: 400px;
+    border-radius: 15px 0px 15px 0px;
+}
+
+.button{
+    background-image: url(./img/pinkBack.jpg);
+    border: 2px solid palevioletred;
+    border-radius: 15px 0px 15px 0px;
+    padding: 2%;
+    font-size: larger;
+    color: white;
+    font-weight: bolder;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 8px 0px black;
+    transition: all 0.5s ease-in;
+    background-image: url(./img/pinkBack.jpg);
+    border: 2px solid palevioletred;
+    border-radius: 15px 0px 15px 0px;
+    padding: 2%;
+    font-size: larger;
+    color: white;
+    font-weight: bolder;
+}
+
+.body form input{
+    border: 2px solid rgb(253, 164, 194);
+}
+.carousel-inner img {
+ height:500px;
+ width:100%;
+}
+
+.trending{
+    background-image:linear-gradient(rgb(0,0,0.8),rgba(0,0,0,0.7)), url(./img/greenBack.jpg);
+    background-attachment: fixed;
+    
+}
+
+.courses{
+    background-image:linear-gradient(rgb(0,0,0.8),rgba(0,0,0,0.7)), url(./img/homelearn.jpg);
+    background-attachment: fixed;
+    
+}
+
+.coursecard{
+    box-shadow: 0px 0px 25px 0px white;
+}
+.coursecard:hover{
+    box-shadow: 0px 0px 5px 0px white;
+}
+
+.title{
+     font-size: xx-large;
+      color: rgb(253, 53, 130);
+       font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 4px palevioletred ;
+
+}
+
+.title:hover{
+    text-shadow: 2px 2px 5px palevioletred ;
+    
+}
+
+.menu-btn{
+    background-color: rgb(48, 224, 42);
+    color:white;
+    box-shadow: 2px 2px 0px black ;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-btn:hover {
+    background-color: rgb(140, 252, 136);
+    color: black;
+    box-shadow: 2px 2px 7px black;
+}
+
+.explore{
+    width:100%;
+    height: 55vh
+}
+
+.course{
+    background-image:linear-gradient(rgb(15, 231, 7),rgb(61, 238, 55),rgb(140, 252, 136));
+    box-shadow: 0px 0px 5px  grey;
+    color: black;
+    text-align: center;
+}
+
+.apply-btn{
+    background-color: rgb(253, 53, 130);
+    color: white;
+    box-shadow: 1px 1px 5px black;
+    font-size: larger;
+    font-weight: bolder;
+    margin-bottom: 25px;
+}
+
+.apply-btn:hover{
+    background-color: crimson;
+    color : white;
+    box-shadow: 1px 1px 5px black;
+}
+
+.includes{
+    background-color: white;
+    border:1px solid grey;
+    box-shadow:  1px 1px 5px grey;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.course-nav{
+    background-color:rgb(252, 38, 120) ;
+    padding: 18px;
+    border-radius: 40px;
+}
+
+.course-nav a{
+    color: white;
+    font-size: x-large;
+    margin-right: 220px;
+    font-weight: bolder;
+}
+/* in singlecourse page */
+@media (max-width:1000px){
+    .course-nav{
+        display: none;
+    }
+}
+
+/* 
+styling for user dashboards sidenav bar */
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: rgb(184, 247, 181) ;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border-right: 2px solid rgb(252, 38, 120);
+    box-shadow: 0px 0px 10px;
+    font-size: larger;
+    font-weight: bolder;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: rgb(252, 38, 120);
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color:rgb(121, 248, 116) ;
+    color: black;
+  }
+  
+  div.content {
+    margin-left: 300px;
+    padding: 1px 16px;
+   
+  }
+
+  div.content .profile{
+      border: 1px solid gray;
+      box-shadow: 0px 0px 2px gray;
+      border-radius: 5px;
+  }
+
+  div.content .profile:hover{
+    border: 1px solid gray;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 5px;
+}
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 450px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  /* 
+  stylink for user dashboard sidenav end */
+
+  .footimg {
+      text-align: center;
+      background-color: rgb(184, 247, 181);
+  }
+  
+/* Admin Form Style */
+
+
+.form-style-10{
+	max-width: 100%;
+	padding:30px;
+	margin:40px auto;
+	background: #FFF;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+.form-style-10 .inner-wrap{
+	padding: 30px;
+	background: #F8F8F8;
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+.form-style-10 h1{
+	background: rgb(238, 20, 136);
+	padding: 20px 30px 15px 30px;
+	margin: -30px -30px 30px -30px;
+	border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid green;
+}
+.form-style-10 h1 > span{
+	display: block;
+	margin-top: 2px;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+.form-style-10 label{
+	display: block;
+	font: 13px Arial, Helvetica, sans-serif;
+	color: #888;
+	margin-bottom: 15px;
+}
+.form-style-10 input[type="text"],
+.form-style-10 input[type="number"],
+.form-style-10 textarea,
+.form-style-10 select {
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 8px;
+	border-radius: 6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border: 1px 1px 1px 1px solid #fff;
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+
+.form-style-10 .section{
+	font: normal 20px 'Bitter', serif;
+	color: deeppink;
+	margin-bottom: 5px;
+}
+
+.form-style-10 .section span {
+	background: rgb(165, 250, 165);
+	padding: 5px 10px 5px 10px;
+	position: absolute;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border: 4px solid #fff;
+	font-size: 14px;
+	margin-left: -45px;
+	color: black;
+	margin-top: -3px;
+}
+
+.section span {
+    text-align: center;
+    margin-left: 50px;
+	background: rgb(165, 250, 165);
+	padding: 5px 10px 5px 10px;
+	position: absolute;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border: 4px solid #fff;
+	font-size: 14px;
+	margin-left: -45px;
+	color: black;
+	margin-top: -3px;
+}
+
+.form-style-10 button{
+	background: deeppink;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid rgb(246, 2, 128);
+	font-size: 15px;
+}
+
+.form-style-10 button:hover{
+	background: rgb(207, 10, 115);
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+
+.form-style-10 .privacy-policy{
+	float: right;
+	width: 250px;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #4D4D4D;
+	margin-top: 10px;
+	text-align: right;
+}
